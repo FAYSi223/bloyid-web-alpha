@@ -99,47 +99,99 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: rgba(0, 0, 0, 0.9);
-  border: 1px solid #333;
-  border-radius: 8px;
-  padding: 15px 40px;
+  background: linear-gradient(to right, rgba(17, 24, 39, 0.95), rgba(31, 41, 55, 0.95));
+  backdrop-filter: blur(8px);
+  border: 1px solid rgba(75, 85, 99, 0.4);
+  border-radius: 12px;
+  padding: 24px 48px;
   z-index: 1000;
   color: white;
   text-align: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
   animation: slideDown 0.5s ease forwards;
+}
+
+countdown-timer {
+  display: flex;
+  gap: 16px;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+countdown-timer > span {
+  background: rgba(17, 24, 39, 0.6);
+  padding: 8px 12px;
+  border-radius: 8px;
+  min-width: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+countdown-timer > span::after {
+  content: attr(data-label);
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 12px;
+  font-weight: normal;
+  color: rgba(156, 163, 175, 0.9);
 }
 
 .countdown-content {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 24px;
 }
 
 .beta-text {
-  font-size: 0.9em;
+  font-size: 1em;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.beta-text small {
+  display: block;
+  margin-top: 8px;
 }
 
 .beta-text a {
-  color: #a855f7;
+  color: rgb(167, 139, 250);
   text-decoration: none;
-  transition: color 0.3s ease;
+  transition: all 0.2s ease;
+  padding: 6px 12px;
+  border-radius: 6px;
+  background: rgba(167, 139, 250, 0.1);
 }
 
 .beta-text a:hover {
-  color: #d8b4fe;
+  color: rgb(196, 181, 253);
+  background: rgba(167, 139, 250, 0.2);
 }
 
 .countdown-popup .close {
   position: absolute;
-  right: 10px;
-  top: 5px;
+  right: 12px;
+  top: 12px;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  opacity: 0.7;
+  opacity: 0.6;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.1);
 }
 
 .countdown-popup .close:hover {
   opacity: 1;
+  background: rgba(255, 255, 255, 0.2);
 }
 
 @keyframes slideDown {
@@ -153,6 +205,15 @@ body {
   }
 }
 
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
+}
+
+countdown-timer > span[data-changed] {
+  animation: pulse 0.3s ease-in-out;
+}
 /* Error Message Container */
 .error-popup {
     position: fixed;
