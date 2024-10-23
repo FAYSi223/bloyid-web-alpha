@@ -112,24 +112,24 @@ body {
 }
 
 countdown-timer {
-  --display: flex;
-  --flex-direction: column;
-  --gap: 10px;
-  --font-size: 28px;
-  --font-weight: 600;
-  --margin-bottom: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 12px;
 }
-
+  
 countdown-timer > span {
-  --background: rgba(40, 45, 60, 0.9);
-  --padding: 8px;
-  --border-radius: 8px;
-  --min-width: 80px;
-  --display: inline-flex;
-  --align-items: center;
-  --justify-content: center;
-  --border: 1px solid rgba(100, 110, 125, 0.2);
-  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    --bg-color: rgba(40, 45, 60, 0.9);
+    --padding: 8px;
+    --border-radius: 8px;
+    --min-width: 80px;
+    --display: inline-flex;
+    --align-items: center;
+    --justify-content: center;
+    --border: 1px solid rgba(100, 110, 125, 0.2);
+    --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .countdown-content {
