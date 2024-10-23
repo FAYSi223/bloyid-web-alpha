@@ -93,37 +93,64 @@ body {
 }
 
 /* Beta Counter Style */
-.countdown-container {
-  transform: translateY(-100%);
-  opacity: 0;
+.countdown-popup {
+  display: none;
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.9);
+  border: 1px solid #333;
+  border-radius: 8px;
+  padding: 15px 40px;
+  z-index: 1000;
+  color: white;
   text-align: center;
-  padding: 1rem;
-  animation: slideDown 1.5s ease 1.5s forwards;
-  margin-bottom: 2rem;
+  animation: slideDown 0.5s ease forwards;
 }
 
-@keyframes slideDown {
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
+.countdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
 }
 
-.countdown-text {
-  font-size: 1.25rem;
-  margin-bottom: 0.5rem;
-  color: #ffffff;
+.beta-text {
+  font-size: 0.9em;
 }
 
-.countdown-link {
-  font-size: 0.875rem;
+.beta-text a {
   color: #a855f7;
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
-.countdown-link:hover {
+.beta-text a:hover {
   color: #d8b4fe;
+}
+
+.countdown-popup .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+
+.countdown-popup .close:hover {
+  opacity: 1;
+}
+
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -100%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, 0);
+    opacity: 1;
+  }
 }
 
 /* Error Message Container */
