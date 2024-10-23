@@ -92,6 +92,40 @@ body {
     }
 }
 
+/* Beta Counter Style */
+.countdown-container {
+  transform: translateY(-100%);
+  opacity: 0;
+  text-align: center;
+  padding: 1rem;
+  animation: slideDown 1.5s ease 1.5s forwards;
+  margin-bottom: 2rem;
+}
+
+@keyframes slideDown {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.countdown-text {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #ffffff;
+}
+
+.countdown-link {
+  font-size: 0.875rem;
+  color: #a855f7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.countdown-link:hover {
+  color: #d8b4fe;
+}
+
 /* Error Message Container */
 .error-popup {
     position: fixed;
