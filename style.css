@@ -94,23 +94,23 @@ body {
 
 /* Beta Counter Style */
 .countdown-popup {
-  display: none;
-  position: fixed;
-  top: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  background: linear-gradient(to right, rgba(30, 35, 50, 0.95), rgba(45, 55, 70, 0.95));
-  backdrop-filter: blur(8px);
-  border: 1px solid rgba(85, 95, 110, 0.4);
-  border-radius: 12px;
-  padding: 24px 48px;
-  z-index: 1000;
-  color: white;
-  text-align: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
-  animation: slideDown 0.5s ease forwards;
+    display: none;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(to right, rgba(30, 35, 50, 0.95), rgba(45, 55, 70, 0.95));
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(85, 95, 110, 0.4);
+    border-radius: 12px;
+    padding: 24px 48px;
+    z-index: 1000;
+    color: white;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    animation: slideDown 0.5s ease forwards;
 }
-
+  
 countdown-timer {
     display: flex;
     flex-direction: column;
@@ -131,69 +131,70 @@ countdown-timer > span {
     --border: 1px solid rgba(100, 110, 125, 0.2);
     --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
-
+  
 .countdown-content {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 24px;
+    --display: flex;
+    --flex-direction: column;
+    --align-items: center;
+    --gap: 24px;
 }
-
+  
 .beta-text {
-  font-size: 1em;
-  font-weight: 500;
-  color: rgba(255, 255, 255, 0.9);
+    font-size: 1em;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.9);
 }
-
+  
 .beta-text small {
-  display: block;
-  margin-top: 8px;
+    display: block;
+    margin-top: 8px;
 }
-
+  
 .beta-text a {
-  color: rgb(167, 139, 250);
-  text-decoration: none;
-  transition: all 0.2s ease;
-  padding: 6px 12px;
-  border-radius: 6px;
-  background: rgba(167, 139, 250, 0.1);
+    color: rgb(167, 139, 250);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    padding: 6px 12px;
+    border-radius: 6px;
+    background: rgba(167, 139, 250, 0.1);
 }
-
+  
 .beta-text a:hover {
-  color: rgb(196, 181, 253);
-  background: rgba(167, 139, 250, 0.2);
+    color: rgb(196, 181, 253);
+    background: rgba(167, 139, 250, 0.2);
 }
-
+  
 .countdown-popup .close {
-  position: absolute;
-  right: 12px;
-  top: 15px;
-  width: 24px;
-  height: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  opacity: 0.6;
-  transition: all 0.2s ease;
-  border-radius: 4px;
-  background: rgba(255, 255, 255, 0.1);
+    position: absolute;
+    right: 12px;
+    top: 21px;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    opacity: 0.6;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.1);
 }
-
+  
 .countdown-popup .close:hover {
-  opacity: 1;
-  background: rgba(255, 255, 255, 0.2);
-}
-
-@keyframes slideDown {
-  from {
-    transform: translate(-50%, -100%);
-    opacity: 0;
-  }
-  to {
-    transform: translate(-50%, 0);
     opacity: 1;
-  }
+    background: rgba(255, 255, 255, 0.2);
+}
+  
+@keyframes slideDown {
+    from {
+      transform: translate(-50%, -100%);
+      opacity: 0;
+    }
+    to {
+      transform: translate(-50%, 0);
+      opacity: 1;
+    }
 }
 
 /* Error Message Container */
