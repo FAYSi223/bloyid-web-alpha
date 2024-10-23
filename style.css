@@ -112,24 +112,24 @@ body {
 }
 
 countdown-timer {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  font-size: 28px;
-  font-weight: 600;
-  margin-bottom: 12px;
+  --display: flex;
+  --flex-direction: column;
+  --gap: 10px;
+  --font-size: 28px;
+  --font-weight: 600;
+  --margin-bottom: 12px;
 }
 
 countdown-timer > span {
-  background: rgba(40, 45, 60, 0.9);
-  padding: 8px;
-  border-radius: 8px;
-  min-width: 80px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid rgba(100, 110, 125, 0.2);
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  --background: rgba(40, 45, 60, 0.9);
+  --padding: 8px;
+  --border-radius: 8px;
+  --min-width: 80px;
+  --display: inline-flex;
+  --align-items: center;
+  --justify-content: center;
+  --border: 1px solid rgba(100, 110, 125, 0.2);
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .countdown-content {
@@ -167,7 +167,7 @@ countdown-timer > span {
 .countdown-popup .close {
   position: absolute;
   right: 12px;
-  top: 50%;
+  top: 15px;
   width: 24px;
   height: 24px;
   display: flex;
