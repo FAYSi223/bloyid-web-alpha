@@ -167,7 +167,7 @@ countdown-timer > span {
 .countdown-popup .close {
   position: absolute;
   right: 12px;
-  top: 10px;
+  top: 5px;
   width: 24px;
   height: 24px;
   display: flex;
