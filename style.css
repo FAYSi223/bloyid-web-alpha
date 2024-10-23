@@ -99,9 +99,9 @@ body {
   top: 20px;
   left: 50%;
   transform: translateX(-50%);
-  background: linear-gradient(to right, rgba(17, 24, 39, 0.95), rgba(31, 41, 55, 0.95));
+  background: linear-gradient(to right, rgba(30, 35, 50, 0.95), rgba(45, 55, 70, 0.95));
   backdrop-filter: blur(8px);
-  border: 1px solid rgba(75, 85, 99, 0.4);
+  border: 1px solid rgba(85, 95, 110, 0.4);
   border-radius: 12px;
   padding: 24px 48px;
   z-index: 1000;
@@ -113,32 +113,23 @@ body {
 
 countdown-timer {
   display: flex;
-  gap: 16px;
+  flex-direction: column;
+  gap: 10px;
   font-size: 28px;
   font-weight: 600;
   margin-bottom: 12px;
 }
 
 countdown-timer > span {
-  background: rgba(17, 24, 39, 0.6);
-  padding: 8px 12px;
+  background: rgba(40, 45, 60, 0.9);
+  padding: 8px;
   border-radius: 8px;
-  min-width: 60px;
+  min-width: 80px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  position: relative;
-}
-
-countdown-timer > span::after {
-  content: attr(data-label);
-  position: absolute;
-  bottom: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 12px;
-  font-weight: normal;
-  color: rgba(156, 163, 175, 0.9);
+  border: 1px solid rgba(100, 110, 125, 0.2);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .countdown-content {
@@ -205,15 +196,6 @@ countdown-timer > span::after {
   }
 }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.02); }
-  100% { transform: scale(1); }
-}
-
-countdown-timer > span[data-changed] {
-  animation: pulse 0.3s ease-in-out;
-}
 /* Error Message Container */
 .error-popup {
     position: fixed;
