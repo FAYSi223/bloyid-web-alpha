@@ -107,6 +107,19 @@
             </div>
         </div>
 
+        <div id="countdownPopup" class="countdown-popup">
+            <div class="countdown-content">
+              <countdown-timer 
+                      end-date="2024-10-27T00:00:00">
+              </countdown-timer>
+              <div class="beta-text">
+                Bloyid Closed Beta Release
+                <small><a href="https://discord.gg/KJBSRXafEy">Join Beta here</a></small>
+              </div>
+            </div>
+            <div class="close">×</div>
+        </div>
+
         <!-- Social Links -->
         <div class="social-links">
             <a href="https://x.com/NertiviaChat" title="Twitter">
@@ -136,5 +149,16 @@
             </div>
         </footer>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/gh/FAYSi223/html-elements@v1.0.2/countdown.js"></script>
+    <script>
+        setTimeout(() => {
+          document.getElementById('countdownPopup').style.display = 'flex';
+        }, 1500);
+        
+        document.querySelector('#countdownPopup .close').addEventListener('click', () => {
+          document.getElementById('countdownPopup').style.display = 'none';
+        });
+    </script>
 </body>
 </html>
