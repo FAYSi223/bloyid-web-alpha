@@ -399,13 +399,11 @@ countdown-timer > span {
 .partner-banner {
     text-align: center;
     padding: 20px;
-    background-color: #f5f5f5;
     border-top: 2px solid #ddd;
 }
 
 .partner-banner h2 {
     font-size: 1.8rem;
-    color: #333;
 }
 
 .partner-logos {
