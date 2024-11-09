@@ -1,17 +1,19 @@
 # Bloyid
-Bloyid is a full free chat app. You can create your own Community or Join. 
-<br> You can Talk & Talk with your friend. 
-<br> Btw you can also Post what you want in the social feature.
+Bloyid is a full free chat app. You can create your own community or join a community. 
+<br> You can Talk & Talk with your friends. 
+<br> Btw you can also post what you want in the social feature.
+
+---------------------------------------------------
 
 ## The website
-[bloyid.com](https://www.bloyid.com)
+[bloyid.com](https://bloyid.com)
 
 ## Socials
 [Discord Server](https://discord.gg/Kfmq8kpSNH)
-<br> [Twitter](https://x.com/NertiviaChat)
+<br> [Twitter](https://x.com/bloyid_chat)
 
 ## Contact us
-[Contact Page](https://www.bloyid.com/contact)
+[Contact Page](https://bloyid.com/contact)
 
 ---------------------------------------------------
 
